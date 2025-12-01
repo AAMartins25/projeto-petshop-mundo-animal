@@ -3,54 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <title>Produtos - Mundo Animal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- CSS próprio -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Mundo Animal</h1>
-    <nav>
-        <a href="index.html">Início</a> |
-        <a href="produtos.html">Produtos</a> |
-        <a href="servicos.html">Serviços</a> |
-        <a href="contato.html">Contato</a> |
-        <a href="ajuda.html">Ajuda</a>
-    </nav>
-</header>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Navegação principal">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Mundo Animal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSite" aria-controls="navbarSite"
+                aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<hr>
+        <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link active" href="produtos.html">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<main>
-    <h2>Produtos</h2>
+<main class="container my-4">
+    <h1 class="mb-4">Produtos</h1>
 
-    <h3>Categoria: Acessórios</h3>
-    <p><img src="https://cdn.pixabay.com/photo/2017/01/09/21/51/dog-1967739_1280.jpg" alt="Roupa para cachorro" width="200"><br>
-    Roupa de inverno para cães pequenos - R$ 59,90</p>
+    <!-- Comentário: Exibição de produtos por categoria, com imagem, descrição e valor -->
 
-    <p><img src="https://cdn.pixabay.com/photo/2015/03/26/09/54/dog-691212_1280.jpg" alt="Brinquedo de borracha" width="200"><br>
-    Brinquedo de borracha resistente para cães - R$ 29,90</p>
+    <h2 class="mt-3 mb-3">Acessórios</h2>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg"
+                     class="card-img-top"
+                     alt="Cachorro descansando em cama confortável">
+                <div class="card-body">
+                    <h5 class="card-title">Cama confortável para cães</h5>
+                    <p class="card-text">Cama macia e aconchegante para o descanso do seu pet.</p>
+                    <p class="card-text"><strong>R$ 199,90</strong></p>
+                </div>
+            </div>
+        </div>
 
-    <h3>Categoria: Rações não perecíveis</h3>
-    <p><img src="https://cdn.pixabay.com/photo/2016/02/19/11/53/dog-1209621_1280.jpg" alt="Ração premium" width="200"><br>
-    Ração Premium Adulto 10kg - R$ 149,90</p>
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_1280.jpg"
+                     class="card-img-top"
+                     alt="Cão de pequeno porte tomando banho em petshop usando acessório">
+                <div class="card-body">
+                    <h5 class="card-title">Coleira e acessório para banho</h5>
+                    <p class="card-text">Acessórios práticos para o momento do banho e passeio.</p>
+                    <p class="card-text"><strong>R$ 49,90</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <p><img src="https://cdn.pixabay.com/photo/2016/08/23/17/03/cat-1616377_1280.jpg" alt="Ração para gatos" width="200"><br>
-    Ração sabor peixe para gatos 10kg - R$ 139,90</p>
+    <h2 class="mt-4 mb-3">Rações não perecíveis</h2>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <img src="dog-5504867_1280.jpg"
+                     class="card-img-top"
+                     alt="Cão se alimentando com ração em pote">
+                <div class="card-body">
+                    <h5 class="card-title">Ração Premium Adulto 10kg</h5>
+                    <p class="card-text">Ração balanceada para cães adultos, com vitaminas e minerais essenciais.</p>
+                    <p class="card-text"><strong>R$ 149,90</strong></p>
+                </div>
+            </div>
+        </div>
 
-    <h3>Categoria: Produtos de higiene e limpeza</h3>
-    <p><img src="https://cdn.pixabay.com/photo/2018/02/01/16/52/dog-3123276_1280.jpg" alt="Tapete higiênico" width="200"><br>
-    Tapete higiênico absorvente (pacote com 30 unidades) - R$ 89,90</p>
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <img src="dog-5504867_1280.jpg"
+                     class="card-img-top"
+                     alt="Cão se alimentando com ração seca">
+                <div class="card-body">
+                    <h5 class="card-title">Ração sabor frango e arroz 10kg</h5>
+                    <p class="card-text">Ração seca com alto valor nutricional, ideal para o dia a dia.</p>
+                    <p class="card-text"><strong>R$ 139,90</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <p><img src="https://cdn.pixabay.com/photo/2014/04/13/20/49/dog-323401_1280.jpg" alt="Shampoo pet" width="200"><br>
-    Shampoo neutro para cães e gatos - R$ 34,90</p>
+    <h2 class="mt-4 mb-3">Produtos de higiene e limpeza</h2>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_1280.jpg"
+                     class="card-img-top"
+                     alt="Cão sendo limpo com água e shampoo">
+                <div class="card-body">
+                    <h5 class="card-title">Kit banho (shampoo e condicionador)</h5>
+                    <p class="card-text">Produtos suaves, indicados para uso frequente em cães e gatos.</p>
+                    <p class="card-text"><strong>R$ 59,90</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg"
+                     class="card-img-top"
+                     alt="Cachorro em cama limpa após o banho">
+                <div class="card-body">
+                    <h5 class="card-title">Tapete higiênico (30 unidades)</h5>
+                    <p class="card-text">Tapetes superabsorventes para manter o ambiente sempre limpo.</p>
+                    <p class="card-text"><strong>R$ 89,90</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </main>
 
-<hr>
-
-<footer>
-    <p>&copy; 2025 Mundo Animal Petshop. Todos os direitos reservados.</p>
-    <p>Contato: contato@mundoanimal.com.br</p>
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-1">&copy; 2025 Mundo Animal Petshop. Todos os direitos reservados.</p>
+        <p class="footer-text-small">
+            Contato: contato@mundoanimal.com.br | Telefone: (11) 99999-9999
+        </p>
+    </div>
 </footer>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS próprio -->
+<script src="script.js"></script>
 </body>
 </html>
