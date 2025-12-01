@@ -1,0 +1,54 @@
+/* Estilos gerais do site Mundo Animal - Fase 2 */
+
+/* Define fonte padrão e cor de fundo suave */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9fb;
+}
+
+/* Navbar personalizada */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Títulos principais */
+h1, h2 {
+    color: #2b4c7e;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2b4c7e;
+    color: #ffffff;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* Conteúdo principal */
+main {
+    min-height: 60vh;
+}
+
+/* Cards de produtos/serviços */
+.card img {
+    object-fit: cover;
+    height: 200px;
+}
+
+/* Formulários */
+.form-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #d0d7de;
+}
+
+/* Texto menor no rodapé */
+.footer-text-small {
+    font-size: 0.85rem;
+}
